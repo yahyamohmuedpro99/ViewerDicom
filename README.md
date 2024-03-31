@@ -21,7 +21,7 @@ Before running the application, ensure you have Docker Compose installed on your
 ## Running the Application
 1. Go back to the root directory of the project:
     ```bash
-    cd ..
+    cd ../..
     ```
 
 2. Start the application using Docker Compose:
