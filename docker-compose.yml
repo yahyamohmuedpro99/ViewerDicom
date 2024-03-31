@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  server:
+    build: ./server
+    ports: 
+      - "5000:5000"
+    volumes: 
+      - ./server:/app # Adjusted this line
+    command: python run.py # Ensure this command is correct based on your Dockerfile's CMD
+
+  web:
+    build: ./client/dicom_view
+    ports: 
+      - "3000:3000"
+    volumes: 
+      - ./client/dicom_view:/user/src/app
+    depends_on: 
+      - server

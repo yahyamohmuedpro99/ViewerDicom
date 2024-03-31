@@ -1,0 +1,8 @@
+flask==3.0.0
+Flask-SQLAlchemy
+pydicom
+numpy
+Pillow
+pylibjpeg
+pylibjpeg-libjpeg
+python-gdcm
